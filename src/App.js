@@ -1,6 +1,9 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './Components/NavBar';
+import { ShopPage } from './pages/shop/ShopPage';
+import { CartPage } from './pages/cart/CartPage';
+
 
 function App() {
   return (
@@ -10,8 +13,8 @@ function App() {
         <NavBar />
 
         <Routes>
-          <Route path='/' />
-          <Route path='/cart' />
+          <Route path='/' element={<ShopPage />} />
+          <Route path='/cart' element={<CartPage />} />
         </Routes>
       </header>
     </div>
