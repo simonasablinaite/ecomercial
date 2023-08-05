@@ -2,9 +2,11 @@ import React, { useContext } from 'react';
 import { PRODUCTS } from '../../products';
 import { ShopContext } from '../../context/shop-context';
 import { CartItem } from './CartItem';
+import '../../style/checkout.css';
 
 export const CartPage = () => {
-   const { cartItems } = useContext(ShopContext);
+   const { cartItems, getTotalAmount } = useContext(ShopContext);
+   const totalAmount = getTotalAmount();
    return (
       <div className='cart'>
          <div>
@@ -18,7 +20,11 @@ export const CartPage = () => {
                }
             })}
          </div>
-
+         <div className="checkout">
+            <span>Subtotal: &euro; {totalAmount}</span>
+            <button>Continue Shopping</button>
+            <button>Checkout</button>
+         </div>
       </div>
    )
 }

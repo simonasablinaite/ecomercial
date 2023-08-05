@@ -4,19 +4,19 @@ export const PRODUCTS = [
    {
       id: 1,
       productName: 'AppleWatch',
-      price: 2.499,
+      price: 2499.99,
       productImage: watchApple
    },
    {
       id: 2,
       productName: 'AppleWatch',
-      price: 7.599,
+      price: 7599.00,
       productImage: watchApple
    },
    {
       id: 3,
       productName: 'AppleWatch',
-      price: 1.499,
+      price: 1499.99,
       productImage: watchApple
    }
 ]
