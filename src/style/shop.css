@@ -14,6 +14,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  list-style: none;
 }
 
 .product {
@@ -27,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid grey;
+  padding: 20px;
 }
 
 .product .description {

@@ -12,7 +12,8 @@ export const ShopPage = () => {
 
          <div className="productsList">
             {PRODUCTS.map((product) => (
-               <Product data={product} />
+               <li key={product.id}><Product
+                  data={product} /></li>
             )
             )}
          </div>

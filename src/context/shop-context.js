@@ -17,19 +17,19 @@ export const ShopContextProvider = (props) => {
 
    const addToCart = (itemId) => {
       setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
-   }
+   };
 
    const removeFromCart = (itemId) => {
       setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
-   }
+   };
 
-   const contextValue = { cartItems, addToCart, removeFromCart }
+   const updateCartItemsCount = (newAmount, itemId) => {
+      setCartItems((prev) => ({ ...prev, [itemId]: newAmount }))
+   };
 
-   return (
-      <div>
-         <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
-      </div>
-   )
+   const contextValue = { cartItems, addToCart, removeFromCart, updateCartItemsCount };
+
+   return <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
 }
 
 

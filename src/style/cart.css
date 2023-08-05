@@ -1,0 +1,32 @@
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 10px 10px 16px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 16px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 16px -6px rgba(0, 0, 0, 0.75);
+  padding: 20px 0;
+}
+
+.description {
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+.description span {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.count-handler {
+  margin-top: 20px;
+}
+
+.count-handler input {
+  width: 30px;
+  text-align: center;
+}
