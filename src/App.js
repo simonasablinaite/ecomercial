@@ -2,20 +2,22 @@ import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './Components/NavBar';
 import { ShopPage } from './pages/shop/ShopPage';
 import { CartPage } from './pages/cart/CartPage';
+import { ShopContextProvider } from './context/shop-context';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
 
+      <ShopContextProvider>
         <NavBar />
 
         <Routes>
           <Route path='/' element={<ShopPage />} />
           <Route path='/cart' element={<CartPage />} />
         </Routes>
-      </header>
+      </ShopContextProvider>
+
     </div>
   );
 }

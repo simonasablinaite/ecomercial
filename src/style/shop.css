@@ -27,7 +27,6 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid grey;
-  border-radius: 3px;
 }
 
 .product .description {
@@ -35,8 +34,20 @@ body {
 }
 
 .product:hover {
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
   cursor: pointer;
+  width: 300px;
+  height: 350px;
+  font-size: 22px;
+  box-shadow: 0 2px 2px 0.5px;
+}
+
+.addToCartBtn {
+  margin-top: 20px;
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 @media (min-width: 768px) {
