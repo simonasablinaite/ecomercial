@@ -27,7 +27,7 @@ export const CartPage = () => {
          </div>
          <div className="checkout">
 
-            <span>Subtotal: &euro; {totalAmount}</span>
+            <span>Subtotal: &euro; {(Math.round(totalAmount * 100) / 100).toFixed(2)}</span>
 
             <div className="buttons-wrapper">
                <button onClick={() => navigate('/')}>Continue Shopping</button>
